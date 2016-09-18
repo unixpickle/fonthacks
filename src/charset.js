@@ -43,11 +43,11 @@
   }
 
   function toggleBold(ch) {
-    toggle(ch, FIRST_BOLD, LAST_BOLD, FIRST_ITALIC, LAST_ITALIC);
+    return toggle(ch, FIRST_BOLD, LAST_BOLD, FIRST_ITALIC, LAST_ITALIC);
   }
 
   function toggleItalic(ch) {
-    toggle(ch, FIRST_ITALIC, LAST_ITALIC, FIRST_BOLD, LAST_BOLD);
+    return toggle(ch, FIRST_ITALIC, LAST_ITALIC, FIRST_BOLD, LAST_BOLD);
   }
 
   function toggle(ch, typeStart, typeEnd, otherStart, otherEnd) {
